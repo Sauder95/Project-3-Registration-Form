@@ -1,0 +1,162 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+html {
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    margin: 5vh 5vw;
+}
+h2 {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+hr {
+    border: 1px solid #002db3;
+    margin: 5px;
+}
+.thick{
+    margin-top: 5vh;
+    border: 5px solid #1f3d7a;
+    border-radius: 5px;
+}
+::placeholder {
+    text-align: right;
+}
+textarea::placeholder {
+    text-align: left;
+}
+/* ----------DRY CLASSES----------- */
+
+input,select{
+    height: 3rem;
+    margin-bottom: 3vh;
+    max-width: 100%;
+    padding: 15px;
+    background-color: #b3e0ff;
+    border-radius: 5px;
+    opacity: .25;
+    border-style: inset;
+    border-width: 2px;
+}
+textarea {
+    width: 100%;
+    margin: 2vh 0 3vh;
+    padding: 15px;
+    background-color: #b3e0ff;
+    border-radius: 5px;
+    opacity: .25;
+    border-style: inset;
+    border-width: 2px;
+
+}
+input:focus,
+select:focus
+textarea:focus{
+    opacity: 1;
+}
+
+/* -----------HEADER-------------- */
+
+header {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: snow;
+background-color: #66b3ff;
+box-shadow: inset 1px 1px 20px 10px rgba(0,0,0,.5);
+}
+.head-title {
+    margin: 0;
+    padding: 2vh;
+    text-align: center;
+    font-size: 3rem;
+    
+    
+
+}
+.signup {
+    text-align: center;
+}
+.signup-blurb {
+    text-align: center;
+    margin: auto 10vw;
+}
+.reg-form {
+    width: 100%;
+    
+    margin-top: 5vh;
+}
+fieldset {
+    width: 100%;
+    height: 100%;
+    padding: 5vh 2vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.flex-dir {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#postal {
+    max-width: 30vw;
+}
+.fieldset-2 {
+    display: block;
+    padding-bottom: 0;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.checkbox input {
+    margin:0 20px 0 0;
+}
+.checkbox label {
+    align-items: center;
+}
+[type="submit"] {
+    width:100%;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: ghostwhite;
+    background-color: lightslategray;
+    border-radius: 20px;
+}
+.copyright {
+    text-align: center;
+    margin:  2vh auto;
+}
+/* ---------MEDIA QUERIES--------------- */
+@media screen and (min-width: 768px){
+    
+    .container{
+        margin: auto 20vw;
+    }
+
+    .flex-dir {
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .flex-dir > input, select {
+        width: 70%;
+    }
+    
+    fieldset {
+        padding: 2vh 0;
+    }
+    
+    }
+    #postal {
+        
+    }
+}
