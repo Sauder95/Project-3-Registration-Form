@@ -25,16 +25,18 @@ hr {
     border-radius: 5px;
 }
 ::placeholder {
+    color:black;
     text-align: right;
 }
 textarea::placeholder {
     text-align: left;
+    
 }
+
 /* ----------DRY CLASSES----------- */
 
 input,select{
     height: 3rem;
-    margin-bottom: 3vh;
     max-width: 100%;
     padding: 15px;
     background-color: #b3e0ff;
@@ -102,11 +104,12 @@ fieldset {
 }
 .flex-dir {
     width: 100%;
+    margin-bottom: 3vh;
     display: flex;
     flex-direction: column;
 }
 #postal {
-    max-width: 30vw;
+    max-width: 25%;
 }
 .fieldset-2 {
     display: block;
@@ -144,19 +147,19 @@ fieldset {
 
     .flex-dir {
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
     
+    }
+    .flex-dir > label{
+        flex-basis: 25%;
     }
     .flex-dir > input, select {
-        width: 70%;
+        flex-basis: 70%;
     }
-    
     fieldset {
         padding: 2vh 0;
     }
     
     }
-    #postal {
-        
-    }
+   
 }
